@@ -4,7 +4,7 @@
 # xx (https://github.com/tonistiigi/xx) provides xx-go, xx-apt-get, and xx-verify.
 # xx-go sets GOOS/GOARCH/CC automatically for the target platform so the builder
 # stays on --platform=$BUILDPLATFORM (native amd64 on GHA) with no QEMU needed.
-FROM --platform=$BUILDPLATFORM tonistiigi/xx@sha256:c64defb9ed5a91eacb37f96ccc3d4cd72521c4bd18d5442905b95e2226b0e707 AS xx
+FROM --platform=$BUILDPLATFORM tonistiigi/xx@sha256:40fe21f44bb8cddf1eb1226db190d0a984118f62ee02a91b77d99448d28264a6 AS xx
 
 # ── Build ──────────────────────────────────────────────────────────────────────
 # CGO_ENABLED=1 is required: mattn/go-sqlite3 and sqlite-vec use CGO.
